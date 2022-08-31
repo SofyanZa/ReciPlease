@@ -84,6 +84,14 @@ extension DetailRecipeViewController {
 
 extension DetailRecipeViewController {
     
+    /// action after tapped Get Directions Button to open the url of the recipe
+    @IBAction private func didTapGetDirectionsButton(_ sender: Any) {
+        manageActivityIndicator(activityIndicator: goActivityIndicator, button: goDirectionButton, showActivityIndicator: true)
+        guard let directionsUrl = URL(string: recipeDisplay?.url ?? "") else {return}
+        UIApplication.shared.open(directionsUrl)
+        manageActivityIndicator(activityIndicator: goActivityIndicator, button: goDirectionButton, showActivityIndicator: false)
+    }
+    
 
     
     /// action lorsque l'icône favorite a été tapée

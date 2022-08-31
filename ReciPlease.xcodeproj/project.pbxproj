@@ -166,6 +166,7 @@
 				D1C0829A28BFA55D005CB868 /* ReciPlease.xcdatamodeld */,
 				D1C0826928BF91D2005CB868 /* ApiProfile.swift */,
 				D1C0827E28BF968B005CB868 /* RecipeSearch.swift */,
+				D1C0828228BF9B98005CB868 /* CoreDataStack.swift */,
 				D1C0828028BF9700005CB868 /* CoreDataManager.swift */,
 			);
 			path = Model;
@@ -202,7 +203,6 @@
 				D194247C28B3C4A300A215A3 /* AppDelegate.swift */,
 				D194248028B3C4A300A215A3 /* ViewController.swift */,
 				D194248528B3C4A400A215A3 /* Assets.xcassets */,
-				D1C0828228BF9B98005CB868 /* CoreDataStack.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
