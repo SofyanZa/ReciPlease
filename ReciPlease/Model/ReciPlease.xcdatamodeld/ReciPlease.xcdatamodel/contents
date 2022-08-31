@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G83" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="FavoritesRecipeList" representedClassName="FavoritesRecipeList" syncable="YES" codeGenerationType="class">
+    <entity name="FavoritesRecipesList" representedClassName="FavoritesRecipesList" syncable="YES" codeGenerationType="class">
         <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="ingredients" optional="YES" attributeType="Transformable"/>
         <attribute name="name" optional="YES" attributeType="String"/>
@@ -9,6 +9,6 @@
         <attribute name="yield" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="FavoritesRecipeList" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="FavoritesRecipesList" positionX="-63" positionY="-18" width="128" height="119"/>
     </elements>
 </model>
