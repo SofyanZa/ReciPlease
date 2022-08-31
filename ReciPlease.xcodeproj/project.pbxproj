@@ -38,7 +38,6 @@
 		D1C0829C28BFA55D005CB868 /* ReciPlease.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1C0829A28BFA55D005CB868 /* ReciPlease.xcdatamodeld */; };
 		D1C082A028BFA665005CB868 /* CoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0829E28BFA665005CB868 /* CoreDataManagerTests.swift */; };
 		D1C082A128BFA665005CB868 /* MockCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0829F28BFA665005CB868 /* MockCoreDataStack.swift */; };
-		D1C082A728BFA697005CB868 /* P10TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C082A328BFA697005CB868 /* P10TestTests.swift */; };
 		D1C082A828BFA697005CB868 /* EdamamRecipe.json in Resources */ = {isa = PBXBuildFile; fileRef = D1C082A428BFA697005CB868 /* EdamamRecipe.json */; };
 		D1C082A928BFA697005CB868 /* SessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C082A528BFA697005CB868 /* SessionFake.swift */; };
 		D1C082AA28BFA697005CB868 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C082A628BFA697005CB868 /* FakeResponseData.swift */; };
@@ -93,7 +92,6 @@
 		D1C0829B28BFA55D005CB868 /* Reciplease_p10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reciplease_p10.xcdatamodel; sourceTree = "<group>"; };
 		D1C0829E28BFA665005CB868 /* CoreDataManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTests.swift; sourceTree = "<group>"; };
 		D1C0829F28BFA665005CB868 /* MockCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCoreDataStack.swift; sourceTree = "<group>"; };
-		D1C082A328BFA697005CB868 /* P10TestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P10TestTests.swift; sourceTree = "<group>"; };
 		D1C082A428BFA697005CB868 /* EdamamRecipe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EdamamRecipe.json; sourceTree = "<group>"; };
 		D1C082A528BFA697005CB868 /* SessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionFake.swift; sourceTree = "<group>"; };
 		D1C082A628BFA697005CB868 /* FakeResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
@@ -245,7 +243,6 @@
 		D1C082A228BFA697005CB868 /* RecipeServiceTests */ = {
 			isa = PBXGroup;
 			children = (
-				D1C082A328BFA697005CB868 /* P10TestTests.swift */,
 				D1C082A428BFA697005CB868 /* EdamamRecipe.json */,
 				D1C082A528BFA697005CB868 /* SessionFake.swift */,
 				D1C082A628BFA697005CB868 /* FakeResponseData.swift */,
@@ -465,7 +462,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1C082A028BFA665005CB868 /* CoreDataManagerTests.swift in Sources */,
-				D1C082A728BFA697005CB868 /* P10TestTests.swift in Sources */,
 				D1C082A928BFA697005CB868 /* SessionFake.swift in Sources */,
 				D1C082A128BFA665005CB868 /* MockCoreDataStack.swift in Sources */,
 				D1C0827528BF92B8005CB868 /* ReciPleaseTests.swift in Sources */,
