@@ -36,11 +36,11 @@
 		D1C0829428BF9E58005CB868 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0829328BF9E58005CB868 /* Time.swift */; };
 		D1C0829628BF9EC5005CB868 /* IngredientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0829528BF9EC5005CB868 /* IngredientsTableViewCell.swift */; };
 		D1C0829C28BFA55D005CB868 /* ReciPlease.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1C0829A28BFA55D005CB868 /* ReciPlease.xcdatamodeld */; };
-		D1C082A028BFA665005CB868 /* CoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0829E28BFA665005CB868 /* CoreDataManagerTests.swift */; };
-		D1C082A128BFA665005CB868 /* MockCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0829F28BFA665005CB868 /* MockCoreDataStack.swift */; };
-		D1C082A828BFA697005CB868 /* EdamamRecipe.json in Resources */ = {isa = PBXBuildFile; fileRef = D1C082A428BFA697005CB868 /* EdamamRecipe.json */; };
-		D1C082A928BFA697005CB868 /* SessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C082A528BFA697005CB868 /* SessionFake.swift */; };
-		D1C082AA28BFA697005CB868 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C082A628BFA697005CB868 /* FakeResponseData.swift */; };
+		D1C082B328BFA8F5005CB868 /* SessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C082B228BFA8F5005CB868 /* SessionFake.swift */; };
+		D1C082B528BFA908005CB868 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C082B428BFA908005CB868 /* FakeResponseData.swift */; };
+		D1C082B728BFA926005CB868 /* CoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C082B628BFA926005CB868 /* CoreDataManagerTests.swift */; };
+		D1C082B928BFA938005CB868 /* MockCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C082B828BFA938005CB868 /* MockCoreDataStack.swift */; };
+		D1C082BC28BFAA39005CB868 /* EdamamRecipe.json in Resources */ = {isa = PBXBuildFile; fileRef = D1C082BB28BFAA39005CB868 /* EdamamRecipe.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,11 +90,11 @@
 		D1C0829328BF9E58005CB868 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		D1C0829528BF9EC5005CB868 /* IngredientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewCell.swift; sourceTree = "<group>"; };
 		D1C0829B28BFA55D005CB868 /* Reciplease_p10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reciplease_p10.xcdatamodel; sourceTree = "<group>"; };
-		D1C0829E28BFA665005CB868 /* CoreDataManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTests.swift; sourceTree = "<group>"; };
-		D1C0829F28BFA665005CB868 /* MockCoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCoreDataStack.swift; sourceTree = "<group>"; };
-		D1C082A428BFA697005CB868 /* EdamamRecipe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EdamamRecipe.json; sourceTree = "<group>"; };
-		D1C082A528BFA697005CB868 /* SessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionFake.swift; sourceTree = "<group>"; };
-		D1C082A628BFA697005CB868 /* FakeResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		D1C082B228BFA8F5005CB868 /* SessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionFake.swift; sourceTree = "<group>"; };
+		D1C082B428BFA908005CB868 /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		D1C082B628BFA926005CB868 /* CoreDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTests.swift; sourceTree = "<group>"; };
+		D1C082B828BFA938005CB868 /* MockCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoreDataStack.swift; sourceTree = "<group>"; };
+		D1C082BB28BFAA39005CB868 /* EdamamRecipe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EdamamRecipe.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,9 +210,12 @@
 		D1C0827328BF92B8005CB868 /* ReciPleaseTests */ = {
 			isa = PBXGroup;
 			children = (
-				D1C082A228BFA697005CB868 /* RecipeServiceTests */,
-				D1C0829D28BFA665005CB868 /* CoreDataManagerTests */,
 				D1C0827428BF92B8005CB868 /* ReciPleaseTests.swift */,
+				D1C082BB28BFAA39005CB868 /* EdamamRecipe.json */,
+				D1C082B628BFA926005CB868 /* CoreDataManagerTests.swift */,
+				D1C082B828BFA938005CB868 /* MockCoreDataStack.swift */,
+				D1C082B228BFA8F5005CB868 /* SessionFake.swift */,
+				D1C082B428BFA908005CB868 /* FakeResponseData.swift */,
 			);
 			path = ReciPleaseTests;
 			sourceTree = "<group>";
@@ -228,27 +231,6 @@
 				D1C0829328BF9E58005CB868 /* Time.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		D1C0829D28BFA665005CB868 /* CoreDataManagerTests */ = {
-			isa = PBXGroup;
-			children = (
-				D1C0829E28BFA665005CB868 /* CoreDataManagerTests.swift */,
-				D1C0829F28BFA665005CB868 /* MockCoreDataStack.swift */,
-			);
-			name = CoreDataManagerTests;
-			path = ../../P10Test/P10TestTests/CoreDataManagerTests;
-			sourceTree = "<group>";
-		};
-		D1C082A228BFA697005CB868 /* RecipeServiceTests */ = {
-			isa = PBXGroup;
-			children = (
-				D1C082A428BFA697005CB868 /* EdamamRecipe.json */,
-				D1C082A528BFA697005CB868 /* SessionFake.swift */,
-				D1C082A628BFA697005CB868 /* FakeResponseData.swift */,
-			);
-			name = RecipeServiceTests;
-			path = ../../P10Test/P10TestTests/RecipeServiceTests;
 			sourceTree = "<group>";
 		};
 		F85280E33F73EACCA35617F9 /* Pods */ = {
@@ -357,7 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1C082A828BFA697005CB868 /* EdamamRecipe.json in Resources */,
+				D1C082BC28BFAA39005CB868 /* EdamamRecipe.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,11 +443,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1C082A028BFA665005CB868 /* CoreDataManagerTests.swift in Sources */,
-				D1C082A928BFA697005CB868 /* SessionFake.swift in Sources */,
-				D1C082A128BFA665005CB868 /* MockCoreDataStack.swift in Sources */,
 				D1C0827528BF92B8005CB868 /* ReciPleaseTests.swift in Sources */,
-				D1C082AA28BFA697005CB868 /* FakeResponseData.swift in Sources */,
+				D1C082B328BFA8F5005CB868 /* SessionFake.swift in Sources */,
+				D1C082B728BFA926005CB868 /* CoreDataManagerTests.swift in Sources */,
+				D1C082B528BFA908005CB868 /* FakeResponseData.swift in Sources */,
+				D1C082B928BFA938005CB868 /* MockCoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
