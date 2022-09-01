@@ -14,7 +14,7 @@ protocol AlamoSession {
     func request(with url: URL, callBack: @escaping (AFDataResponse<Any>) -> Void)
 }
 
-final class SearchSession: AlamoSession {
+class SearchSession: AlamoSession {
     func request(with url: URL, callBack: @escaping (AFDataResponse<Any>) -> Void) {
         AF.request(url).responseJSON { responseData in
             callBack(responseData)

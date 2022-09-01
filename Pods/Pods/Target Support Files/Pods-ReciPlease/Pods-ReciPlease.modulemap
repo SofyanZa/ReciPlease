@@ -1,0 +1,6 @@
+framework module Pods_ReciPlease {
+  umbrella header "Pods-ReciPlease-umbrella.h"
+
+  export *
+  module * { export * }
+}

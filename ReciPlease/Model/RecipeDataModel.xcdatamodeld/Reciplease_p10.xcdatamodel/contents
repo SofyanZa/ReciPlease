@@ -2,13 +2,13 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G83" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="FavoritesRecipesList" representedClassName="FavoritesRecipesList" syncable="YES" codeGenerationType="class">
         <attribute name="image" optional="YES" attributeType="Binary"/>
-        <attribute name="ingredients" optional="YES" attributeType="Transformable"/>
+        <attribute name="ingredients" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="[String]"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="recipeUrl" optional="YES" attributeType="String"/>
         <attribute name="totalTime" optional="YES" attributeType="String"/>
         <attribute name="yield" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="FavoritesRecipesList" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="FavoritesRecipesList" positionX="-60.66015625" positionY="121.9375" width="128" height="133"/>
     </elements>
 </model>

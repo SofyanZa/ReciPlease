@@ -7,7 +7,7 @@
 
 @testable import ReciPlease
 import Foundation
-import Alamofire
+// import Alamofire
 
 struct FakeResponse {
     var response: HTTPURLResponse?
@@ -29,7 +29,9 @@ final class FakeSession: AlamoSession {
         let data = fakeResponse.data
         
         let result = Request.serializeResponseJSON(options: .allowFragments, response: httpResponse, data: data, error: nil)
-        let urlRequest = URLRequest(url: URL(string: "https://www.google.com")!)
+        let urlRequest = URLRequest(url: URL(string: "https://www.apple.com")!)
         callBack(DataResponse(request: urlRequest, response: httpResponse, data: data, result: result))
     }
 }
+
+

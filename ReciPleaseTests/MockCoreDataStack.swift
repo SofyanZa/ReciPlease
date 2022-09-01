@@ -14,7 +14,7 @@ final class MockCoreDataStack: CoreDataStack {
     // MARK: - Initializer
     
     convenience init() {
-        self.init(modelName: "(ReciPlease)")
+        self.init(modelName: "RecipeDataModel")
     }
     
     override init(modelName: String) {
