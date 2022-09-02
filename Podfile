@@ -6,7 +6,7 @@ target 'ReciPlease' do
   use_frameworks!
 
   # Pods for ReciPlease
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 4.9.1'
 
 
   target 'ReciPleaseTests' do

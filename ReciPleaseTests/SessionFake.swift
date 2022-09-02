@@ -7,7 +7,7 @@
 
 @testable import ReciPlease
 import Foundation
-// import Alamofire
+import Alamofire
 
 struct FakeResponse {
     var response: HTTPURLResponse?

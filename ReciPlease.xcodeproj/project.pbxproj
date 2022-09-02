@@ -224,8 +224,8 @@
 				D1C0827428BF92B8005CB868 /* ReciPleaseTests.swift */,
 				D1C082BB28BFAA39005CB868 /* EdamamRecipe.json */,
 				D1C082B228BFA8F5005CB868 /* SessionFake.swift */,
-				D1C082B628BFA926005CB868 /* CoreDataManagerTests.swift */,
 				D1C082B428BFA908005CB868 /* FakeResponseData.swift */,
+				D1C082B628BFA926005CB868 /* CoreDataManagerTests.swift */,
 				D1C082B828BFA938005CB868 /* MockCoreDataStack.swift */,
 			);
 			path = ReciPleaseTests;
@@ -616,7 +616,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.ReciPlease";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.ReciPleasee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -645,7 +645,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.ReciPlease";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sofyan-dev.ReciPleasee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

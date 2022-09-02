@@ -11,12 +11,12 @@ import Alamofire
 //MARK: - Protocol AlamoSession and class SearchSession
 
 protocol AlamoSession {
-    func request(with url: URL, callBack: @escaping (AFDataResponse<Any>) -> Void)
+    func request(with url: URL, callBack: @escaping (DataResponse<Any>) -> Void)
 }
 
-class SearchSession: AlamoSession {
-    func request(with url: URL, callBack: @escaping (AFDataResponse<Any>) -> Void) {
-        AF.request(url).responseJSON { responseData in
+final class SearchSession: AlamoSession {
+    func request(with url: URL, callBack: @escaping (DataResponse<Any>) -> Void) {
+        Alamofire.request(url).responseJSON { responseData in
             callBack(responseData)
         }
     }

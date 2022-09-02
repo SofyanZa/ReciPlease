@@ -12,7 +12,7 @@ import Foundation
 
 //MARK: - RecipesSearch
 
-struct RecipeSearch: Decodable {
+struct RecipesSearch: Decodable {
     let hits: [Hit]
 }
 

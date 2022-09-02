@@ -13,7 +13,7 @@ final class SearchRecipeViewController: UIViewController, UITextFieldDelegate {
     
     var ingredients: [String] = []
     let recipesService = RecipeService()
-    var recipesSearch: RecipeSearch?
+    var recipesSearch: RecipesSearch?
     let identifierSegue = "IngredientsToRecipes"
     
     //MARK: - Outlets

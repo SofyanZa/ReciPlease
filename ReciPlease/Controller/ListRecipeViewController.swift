@@ -11,7 +11,7 @@ final class ListRecipeViewController: UIViewController {
     
     //MARK: - Properties
     
-    var recipesSearch: RecipeSearch?
+    var recipesSearch: RecipesSearch?
     var recipeDisplay: RecipeDisplay?
     
     //MARK: - Outlets
