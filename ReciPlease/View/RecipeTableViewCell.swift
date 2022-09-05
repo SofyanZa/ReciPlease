@@ -21,6 +21,7 @@ class RecipeTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     
+    /// Recette et affichage sur la vue des attributs de l'entité reçues par l'API
     var recipe: Hit? {
         didSet {
             guard let recipe = recipe else { return }
@@ -41,8 +42,10 @@ class RecipeTableViewCell: UITableViewCell {
                 }
             }
         }
+        
     }
     
+    /// Enregistrer en favoris
     var favoriteRecipe: FavoritesRecipesList? {
         didSet {
             titleLabel.text = favoriteRecipe?.name

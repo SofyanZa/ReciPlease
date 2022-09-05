@@ -10,11 +10,12 @@ import XCTest
 
 class RecipleaseTests: XCTestCase {
     
+    /// test func getRecipes
     func testGetRecipes_WhenNoDataIsPassed_ThenShouldReturnFailedCallback() {
         let session = FakeSession(fakeResponse: FakeResponse(response: nil, data: nil))
         let requestService = RecipeService(session: session)
         let expectation = XCTestExpectation(description: "Wait for queue change.")
-        requestService.getRecipes(ingredients: ["chicken"]) { result in
+        requestService.getRecipes(ingredients: [""]) { result in
             guard case .failure(let error) = result else {
                 XCTFail("Test getData method with no data failed.")
                 return
@@ -25,8 +26,16 @@ class RecipleaseTests: XCTestCase {
         wait(for: [expectation], timeout: 0.01)
     }
     
+    // incorrect response passed
     func testGetRecipes_WhenIncorrectResponseIsPassed_ThenShouldReturnFailedCallback() {
-        let session = FakeSession(fakeResponse: FakeResponse(response: FakeResponseData.responseKO, data: FakeResponseData.correctData))
+        
+        guard let url = URL(string: "https://api.edamam.com") else {
+            XCTFail("wrong url")
+            return
+        }
+        
+        let responseKO = HTTPURLResponse(url: url, statusCode: 500, httpVersion: nil, headerFields: nil)
+        let session = FakeSession(fakeResponse: FakeResponse(response: responseKO, data: FakeResponseData.correctData))
         let requestService = RecipeService(session: session)
         let expectation = XCTestExpectation(description: "Wait for queue change.")
         requestService.getRecipes(ingredients: ["chicken"]) { result in
@@ -39,9 +48,16 @@ class RecipleaseTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 0.01)
     }
-    
+    // undecodable data passed
     func testGetRecipes_WhenUndecodableDataIsPassed_ThenShouldReturnFailedCallback() {
-        let session = FakeSession(fakeResponse: FakeResponse(response: FakeResponseData.responseOK, data: FakeResponseData.incorrectData))
+        
+        guard let url = URL(string: "https://api.edamam.com") else {
+            XCTFail("wrong url")
+            return
+        }
+        
+        let responseOK = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)
+        let session = FakeSession(fakeResponse: FakeResponse(response: responseOK, data: FakeResponseData.incorrectData))
         let requestService = RecipeService(session: session)
         let expectation = XCTestExpectation(description: "Wait for queue change.")
         requestService.getRecipes(ingredients: ["chicken"]) { result in
@@ -55,8 +71,16 @@ class RecipleaseTests: XCTestCase {
         wait(for: [expectation], timeout: 0.01)
     }
     
+    // correct data success
     func testGetRecipes_WhenCorrectDataIsPassed_ThenShouldReturnSuccededCallback() {
-        let session = FakeSession(fakeResponse: FakeResponse(response: FakeResponseData.responseOK, data: FakeResponseData.correctData))
+        
+        guard let url = URL(string: "https://api.edamam.com") else {
+            XCTFail("right url")
+            return
+        }
+        
+        let responseOK = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)
+        let session = FakeSession(fakeResponse: FakeResponse(response: responseOK, data: FakeResponseData.correctData))
         let requestService = RecipeService(session: session)
         let expectation = XCTestExpectation(description: "Wait for queue change.")
         requestService.getRecipes(ingredients: ["chicken"]) { result in

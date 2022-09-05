@@ -7,7 +7,7 @@
 
 import UIKit
 
-// Custom image and border
+/// Custom image and border
 
 extension UIImage {
     var isPortrait:  Bool    { size.height > size.width }

@@ -19,7 +19,7 @@ class IngredientTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    /// Method to configure ingredient's cell
+    /// Method to configure ingredient's cell page 1
     func configure(ingredient: String) {
         ingredientLabel.text = "- \(ingredient)"
         ingredientLabel.textColor = .white

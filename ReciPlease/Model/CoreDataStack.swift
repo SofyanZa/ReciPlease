@@ -22,6 +22,7 @@ open class CoreDataStack {
     
     // MARK: - Core Data stack
     
+    // encapsule l’instance de Core Data Stack
     public lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: modelName)
         container.loadPersistentStores(completionHandler: { (_, error) in
@@ -32,6 +33,7 @@ open class CoreDataStack {
         return container
     }()
     
+    // NSManagedObjectContext est une sorte de bloc-notes intelligent. Il réclame des objets au NSPersistentStoreCoordinator
     public lazy var mainContext: NSManagedObjectContext = {
         return persistentContainer.viewContext
     }()

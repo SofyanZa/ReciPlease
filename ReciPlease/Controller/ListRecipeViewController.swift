@@ -46,6 +46,7 @@ extension ListRecipeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     // configure le format de cellule avec la classe RecipeTableViewCell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // dequeueReusableCell Renvoie un objet de cellule de vue de table réutilisable après l'avoir localisé par son identifiant.
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath) as? RecipeTableViewCell else {
             return UITableViewCell()
         }

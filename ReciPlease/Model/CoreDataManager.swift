@@ -15,7 +15,7 @@ final class CoreDataManager {
     private let coreDataStack: CoreDataStack
     private let managedObjectContext: NSManagedObjectContext
     
-    // FavoritesRecipesList est mon entité, on y fait la requete pour obtenir les données
+    /// FavoritesRecipesList est mon entité, on y fait la requete pour obtenir les données
     var favoritesRecipes: [FavoritesRecipesList] {
         let request: NSFetchRequest<FavoritesRecipesList> = FavoritesRecipesList.fetchRequest()
         guard let recipes = try? managedObjectContext.fetch(request) else { return [] }
@@ -31,7 +31,6 @@ final class CoreDataManager {
     
     // MARK: - Methods
     
-    /// Gérer les entités de la liste des recettes préférées
     func addRecipeToFavorites(name: String, image: Data, ingredientsDescription: [String], recipeUrl: String, time: String, yield: String) {
         let recipe = FavoritesRecipesList(context: managedObjectContext)
         recipe.image = image
@@ -43,7 +42,6 @@ final class CoreDataManager {
         coreDataStack.saveContext()
     }
     
-    /// Supprimer la recette des favoris grâce à son nom
     func deleteRecipeFromFavorite(recipeName: String) {
         let request: NSFetchRequest<FavoritesRecipesList> = FavoritesRecipesList.fetchRequest()
         let predicate = NSPredicate(format: "name == %@", recipeName)
@@ -54,13 +52,11 @@ final class CoreDataManager {
         coreDataStack.saveContext()
     }
     
-    /// Supprimer tous les favoris de la liste
     func deleteAllFavorites() {
         favoritesRecipes.forEach { managedObjectContext.delete($0)}
         coreDataStack.saveContext()
     }
     
-    /// Vérifier si une recette est déjà enregistrée dans la liste des favoris
     func checkIfRecipeIsAlreadyFavorite(recipeName: String) -> Bool {
         let request: NSFetchRequest<FavoritesRecipesList> = FavoritesRecipesList.fetchRequest()
         request.predicate = NSPredicate(format: "name == %@", recipeName)

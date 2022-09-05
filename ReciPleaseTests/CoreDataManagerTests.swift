@@ -39,12 +39,6 @@ final class CoreDataManagerTests: XCTestCase {
         XCTAssertTrue(coreDataManager.favoritesRecipes.count == 1)
         XCTAssertTrue(coreDataManager.favoritesRecipes[0].name! == "Chicken Vesuvio")
     }
-    // test delete all recipes
-    func testDeleteAllRecipesMethod_WhenEntitiesAreDeleted_ThenShouldBeCorrectlyDeleted() {
-        coreDataManager.addRecipeToFavorites(name: "Chicken Vesuvio", image: Data(), ingredientsDescription: [""], recipeUrl: "http://www.recipes.com/recipes/8793/", time: "", yield: "")
-        coreDataManager.deleteAllFavorites()
-        XCTAssertTrue(coreDataManager.favoritesRecipes.isEmpty)
-    }
     
     // test delete one recipe
     func testDeleteOneRecipeMethod_WhenEntityIsDeleted_ThenShouldBeCorrectlyDeleted() {
@@ -55,6 +49,14 @@ final class CoreDataManagerTests: XCTestCase {
         XCTAssertTrue(coreDataManager.favoritesRecipes.count == 1)
         XCTAssertTrue(coreDataManager.favoritesRecipes[0].name! == "Strong Cheese")
     }
+    
+    // test delete all recipes
+    func testDeleteAllRecipesMethod_WhenEntitiesAreDeleted_ThenShouldBeCorrectlyDeleted() {
+        coreDataManager.addRecipeToFavorites(name: "Chicken Vesuvio", image: Data(), ingredientsDescription: [""], recipeUrl: "http://www.recipes.com/recipes/8793/", time: "", yield: "")
+        coreDataManager.deleteAllFavorites()
+        XCTAssertTrue(coreDataManager.favoritesRecipes.isEmpty)
+    }
+    
     
     // test if recipe is already saved
     func testCheckingIfRecipeIsAlreadyFavorite_WhenFuncIsCalling_ThenShouldReturnTrue() {

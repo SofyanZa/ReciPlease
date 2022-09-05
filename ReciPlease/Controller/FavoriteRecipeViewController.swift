@@ -20,6 +20,7 @@ final class FavoriteRecipeViewController: UIViewController {
     @IBOutlet private weak var favoriteRecipeTableView: UITableView! { didSet { favoriteRecipeTableView.tableFooterView = UIView() }}
     @IBOutlet private var clearButton: UIBarButtonItem!
     
+    
     //MARK: - Life cycle
     
     override func viewDidLoad() {
@@ -38,7 +39,7 @@ final class FavoriteRecipeViewController: UIViewController {
     
     //MARK: - Segue
     
-    /// Segue to RecipeDetailsViewController
+    /// Segue to DetailsRecipeViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "FavoritesListToDetail" else {return}
         guard let recipesVc = segue.destination as? DetailRecipeViewController else {return}
@@ -48,7 +49,6 @@ final class FavoriteRecipeViewController: UIViewController {
     //MARK: - Action
     
     @IBAction private func didTapClearButton(_ sender: Any) {
-        // demande à l'utilisateur s'il veut tout supprimer
         let alertUserDelete = UIAlertController(title: "Delete All ?", message: "Are you sure you want to delete all favorites ?", preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             self.coreDataManager?.deleteAllFavorites()
@@ -59,12 +59,18 @@ final class FavoriteRecipeViewController: UIViewController {
         alertUserDelete.addAction(ok)
         alertUserDelete.addAction(cancel)
         present(alertUserDelete, animated: true, completion: nil)
+        
+        }
     }
-}
+
+
+
 
 //MARK: - TableView DataSource
 
+
 extension FavoriteRecipeViewController: UITableViewDataSource {
+    
     
     // configure number of lines in TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -78,7 +84,6 @@ extension FavoriteRecipeViewController: UITableViewDataSource {
         cell.favoriteRecipe = coreDataManager?.favoritesRecipes[indexPath.row]
         return cell
     }
-    // cellule sélectionnée pour appeler
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let favoriteRecipe = coreDataManager?.favoritesRecipes[indexPath.row]
         let recipeDisplay = RecipeDisplay(label: favoriteRecipe?.name ?? "", image: favoriteRecipe?.image, url: favoriteRecipe?.recipeUrl ?? "", ingredients: favoriteRecipe?.ingredients ?? [""], totalTime: favoriteRecipe?.totalTime, yield: favoriteRecipe?.yield)

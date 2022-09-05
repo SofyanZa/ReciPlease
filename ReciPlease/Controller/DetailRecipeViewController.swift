@@ -33,8 +33,6 @@ class DetailRecipeViewController: UIViewController {
         let coreDataStack = appDelegate.coreDataStack
         coreDataManager = CoreDataManager(coreDataStack: coreDataStack)
         updateTheView()
-        
-
         recipeImageView.layer.borderWidth = 2
         recipeImageView.layer.borderColor = UIColor.white.cgColor
     }
@@ -63,8 +61,6 @@ extension DetailRecipeViewController {
 
 extension DetailRecipeViewController {
     
-    /// mettre à jour l'icône favori
-    /// Icon a mettre à jour avant soutenance
     private func updateTheFavoriteIcon(){
         guard coreDataManager?.checkIfRecipeIsAlreadyFavorite(recipeName: recipeTitleLabel.text ?? "") == true else {
             favoriteButton.image = UIImage(named: "empty_heart")
@@ -72,7 +68,6 @@ extension DetailRecipeViewController {
         favoriteButton.image = UIImage(named: "full_heart")
     }
     
-    /// ajout de recettes aux coredata
     private func addRecipeToFavorites() {
         guard let name = recipeDisplay?.label, let image = recipeDisplay?.image, let ingredients = recipeDisplay?.ingredients, let url = recipeDisplay?.url, let time = recipeDisplay?.totalTime, let yield = recipeDisplay?.yield else {return}
         coreDataManager?.addRecipeToFavorites(name: name, image: image, ingredientsDescription: ingredients, recipeUrl: url, time: time, yield: yield)
@@ -84,7 +79,6 @@ extension DetailRecipeViewController {
 
 extension DetailRecipeViewController {
     
-    /// action after tapped Get Directions Button to open the url of the recipe
     @IBAction private func didTapGetDirectionsButton(_ sender: Any) {
         manageActivityIndicator(activityIndicator: goActivityIndicator, button: goDirectionButton, showActivityIndicator: true)
         guard let directionsUrl = URL(string: recipeDisplay?.url ?? "") else {return}

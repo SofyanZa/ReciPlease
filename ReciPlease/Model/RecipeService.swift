@@ -41,7 +41,6 @@ final class RecipeService {
                 return
             }
             callback(.success(responseJSON))
-          
         }
     }
 }
