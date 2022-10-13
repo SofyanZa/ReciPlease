@@ -12,5 +12,8 @@ import Foundation
 struct ApiProfile {
     static let apiId = "653ad1fd"
     static let apiKey = "70565afab9b479150e24288fa75d25d4"
+    
+// MovieTry
+//        static let apiKey = "747186b06fc6329c3b034129295297fa"
 
 }

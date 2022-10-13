@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1340"
+   LastUpgradeVersion = "1400"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,7 +17,7 @@
                BlueprintIdentifier = "D194247828B3C4A300A215A3"
                BuildableName = "MoovieRep.app"
                BlueprintName = "MoovieRep"
-               ReferencedContainer = "container:ReciPlease.xcodeproj">
+               ReferencedContainer = "container:MoovieRep.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,19 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D1C0827128BF92B8005CB868"
-               BuildableName = "MoovieRepTests.xctest"
-               BlueprintName = "MoovieRepTests"
-               ReferencedContainer = "container:ReciPlease.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -58,7 +47,7 @@
             BlueprintIdentifier = "D194247828B3C4A300A215A3"
             BuildableName = "MoovieRep.app"
             BlueprintName = "MoovieRep"
-            ReferencedContainer = "container:ReciPlease.xcodeproj">
+            ReferencedContainer = "container:MoovieRep.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -75,7 +64,7 @@
             BlueprintIdentifier = "D194247828B3C4A300A215A3"
             BuildableName = "MoovieRep.app"
             BlueprintName = "MoovieRep"
-            ReferencedContainer = "container:ReciPlease.xcodeproj">
+            ReferencedContainer = "container:MoovieRep.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -84,7 +73,6 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
-      customArchiveName = "MoovieRep"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

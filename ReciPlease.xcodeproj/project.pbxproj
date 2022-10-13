@@ -60,7 +60,7 @@
 		9EACD7AB8E17686FC27EF70B /* Pods-ReciPleaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReciPleaseTests.debug.xcconfig"; path = "Target Support Files/Pods-ReciPleaseTests/Pods-ReciPleaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6C43EB13AF31480FBCA4C4F /* Pods_ReciPleaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReciPleaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D147B99828BFD0890000D301 /* Reciplease_p10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reciplease_p10.xcdatamodel; sourceTree = "<group>"; };
-		D194247928B3C4A300A215A3 /* ReciPlease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReciPlease.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D194247928B3C4A300A215A3 /* MoovieRep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoovieRep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D194247C28B3C4A300A215A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D194247E28B3C4A300A215A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D194248328B3C4A300A215A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		D1C0826528BF8FE0005CB868 /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeService.swift; sourceTree = "<group>"; };
 		D1C0826928BF91D2005CB868 /* ApiProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProfile.swift; sourceTree = "<group>"; };
 		D1C0826B28BF9207005CB868 /* RecipeSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSession.swift; sourceTree = "<group>"; };
-		D1C0827228BF92B8005CB868 /* ReciPleaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReciPleaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C0827228BF92B8005CB868 /* MoovieRepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoovieRepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C0827428BF92B8005CB868 /* ReciPleaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReciPleaseTests.swift; sourceTree = "<group>"; };
 		D1C0827E28BF968B005CB868 /* RecipeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearch.swift; sourceTree = "<group>"; };
 		D1C0828028BF9700005CB868 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -139,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				D194247B28B3C4A300A215A3 /* ReciPlease */,
-				D1C0827328BF92B8005CB868 /* ReciPleaseTests */,
 				D194247A28B3C4A300A215A3 /* Products */,
 				1F08B6F70C1B7566D48BEB1B /* Pods */,
 				2146600659726B71C8C01BA2 /* Frameworks */,
@@ -149,8 +148,8 @@
 		D194247A28B3C4A300A215A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D194247928B3C4A300A215A3 /* ReciPlease.app */,
-				D1C0827228BF92B8005CB868 /* ReciPleaseTests.xctest */,
+				D194247928B3C4A300A215A3 /* MoovieRep.app */,
+				D1C0827228BF92B8005CB868 /* MoovieRepTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +162,7 @@
 				D194249028B4255200A215A3 /* Model */,
 				D1C0825B28BF8CEC005CB868 /* Supporting Files */,
 				D194248A28B3C4A400A215A3 /* Info.plist */,
+				D1C0827328BF92B8005CB868 /* ReciPleaseTests */,
 			);
 			path = ReciPlease;
 			sourceTree = "<group>";
@@ -244,9 +244,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D194247828B3C4A300A215A3 /* ReciPlease */ = {
+		D194247828B3C4A300A215A3 /* MoovieRep */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D194248D28B3C4A400A215A3 /* Build configuration list for PBXNativeTarget "ReciPlease" */;
+			buildConfigurationList = D194248D28B3C4A400A215A3 /* Build configuration list for PBXNativeTarget "MoovieRep" */;
 			buildPhases = (
 				CCC966E81EBA44F5F40D8927 /* [CP] Check Pods Manifest.lock */,
 				D194247528B3C4A300A215A3 /* Sources */,
@@ -258,14 +258,14 @@
 			);
 			dependencies = (
 			);
-			name = ReciPlease;
+			name = MoovieRep;
 			productName = ReciPlease;
-			productReference = D194247928B3C4A300A215A3 /* ReciPlease.app */;
+			productReference = D194247928B3C4A300A215A3 /* MoovieRep.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D1C0827128BF92B8005CB868 /* ReciPleaseTests */ = {
+		D1C0827128BF92B8005CB868 /* MoovieRepTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1C0827828BF92B9005CB868 /* Build configuration list for PBXNativeTarget "ReciPleaseTests" */;
+			buildConfigurationList = D1C0827828BF92B9005CB868 /* Build configuration list for PBXNativeTarget "MoovieRepTests" */;
 			buildPhases = (
 				ACDDBD10CBA92738927360BA /* [CP] Check Pods Manifest.lock */,
 				D1C0826E28BF92B8005CB868 /* Sources */,
@@ -277,9 +277,9 @@
 			dependencies = (
 				D1C0827728BF92B8005CB868 /* PBXTargetDependency */,
 			);
-			name = ReciPleaseTests;
+			name = MoovieRepTests;
 			productName = ReciPleaseTests;
-			productReference = D1C0827228BF92B8005CB868 /* ReciPleaseTests.xctest */;
+			productReference = D1C0827228BF92B8005CB868 /* MoovieRepTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -301,7 +301,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D194247428B3C4A200A215A3 /* Build configuration list for PBXProject "ReciPlease" */;
+			buildConfigurationList = D194247428B3C4A200A215A3 /* Build configuration list for PBXProject "MoovieRep" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -314,8 +314,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D194247828B3C4A300A215A3 /* ReciPlease */,
-				D1C0827128BF92B8005CB868 /* ReciPleaseTests */,
+				D194247828B3C4A300A215A3 /* MoovieRep */,
+				D1C0827128BF92B8005CB868 /* MoovieRepTests */,
 			);
 		};
 /* End PBXProject section */
@@ -452,7 +452,7 @@
 /* Begin PBXTargetDependency section */
 		D1C0827728BF92B8005CB868 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D194247828B3C4A300A215A3 /* ReciPlease */;
+			target = D194247828B3C4A300A215A3 /* MoovieRep */;
 			targetProxy = D1C0827628BF92B8005CB868 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -664,7 +664,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReciPlease.app/ReciPlease";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoovieRep.app/MoovieRep";
 			};
 			name = Debug;
 		};
@@ -683,14 +683,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReciPlease.app/ReciPlease";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoovieRep.app/MoovieRep";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D194247428B3C4A200A215A3 /* Build configuration list for PBXProject "ReciPlease" */ = {
+		D194247428B3C4A200A215A3 /* Build configuration list for PBXProject "MoovieRep" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D194248B28B3C4A400A215A3 /* Debug */,
@@ -699,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D194248D28B3C4A400A215A3 /* Build configuration list for PBXNativeTarget "ReciPlease" */ = {
+		D194248D28B3C4A400A215A3 /* Build configuration list for PBXNativeTarget "MoovieRep" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D194248E28B3C4A400A215A3 /* Debug */,
@@ -708,7 +708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1C0827828BF92B9005CB868 /* Build configuration list for PBXNativeTarget "ReciPleaseTests" */ = {
+		D1C0827828BF92B9005CB868 /* Build configuration list for PBXNativeTarget "MoovieRepTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1C0827928BF92B9005CB868 /* Debug */,
